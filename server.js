@@ -3,7 +3,7 @@ const fs = require('fs');
 const path = require('path');
 
 const server = http.createServer((req, res) => {
-  // Handle requests for the homepage (index.html)
+  // Handle requests for the homepage (index.html) test
   if (req.url === '/' || req.url === '/index.html') {
     const filePath = path.join(__dirname, 'index.html');
     fs.readFile(filePath, 'utf8', (err, content) => {
